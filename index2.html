@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Train Reservation System
+    </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div>
+        <center>
+            <h1>Train Ticket Reservation </h1>
+        </center>
+           
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Ticket NO</label>
+                        <input type="text" name="Ticketno" id="Ticketno">
+                    </div>
+                    <div>
+                        <label>Place</label>
+                        <input type="text" name="place" id="place">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" name="Price" id="Price">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="ticketlist">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Ticket NO</th>
+                            <th>Place</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script2.js"></script>
+</body>
+
+</html>
